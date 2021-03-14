@@ -1,13 +1,6 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-  Platform,
-} from "react-native";
+import { StatusBar, SafeAreaView } from "react-native";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card-component";
@@ -20,12 +13,12 @@ const SafeArea = styled(SafeAreaView)`
 `;
 
 const SearchContainer = styled.View`
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 const RestaurantListContainer = styled.View`
   flex: 1;
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
   background-color: blue;
 `;
 
